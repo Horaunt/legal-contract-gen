@@ -1,0 +1,77 @@
+contract:
+  type: insurance
+  jurisdiction: eu
+  parties:
+    - name: "Insurance Company"
+      role: "insurer"
+      address: "0x1111111111111111111111111111111111111111"
+      verification_required: true
+    - name: "Policy Holder"
+      role: "insured"
+      address: "0x2222222222222222222222222222222222222222"
+      verification_required: true
+  
+  conditions:
+    - trigger: "claim_submitted"
+      action: "process_claim"
+      time_limit: 10
+      parameters:
+        claim_verification_required: true
+        gdpr_data_consent: true
+        automated_assessment: true
+    
+    - trigger: "claim_approved"
+      action: "payout_benefits"
+      time_limit: 5
+      parameters:
+        payment_method: "bank_transfer"
+        gdpr_compliant_transfer: true
+    
+    - trigger: "policy_expired"
+      action: "terminate_policy"
+      time_limit: 30
+      parameters:
+        grace_period: 7
+        notification_required: true
+    
+    - trigger: "data_breach_detected"
+      action: "freeze_operations"
+      time_limit: 1
+      parameters:
+        gdpr_notification_required: true
+        supervisory_authority_notification: true
+  
+  legal_requirements:
+    - "gdpr_compliance"
+    - "psd2_compliance"
+    - "aml_kyc_requirements"
+    - "consumer_protection_laws"
+    - "mica_compliance"
+    - "solvency_ii_compliance"
+  
+  metadata:
+    description: "EU-compliant insurance contract with GDPR and PSD2 compliance"
+    version: "1.0.0"
+    author: "Smart Contract Generator"
+    regulatory_bodies:
+      - "European Securities and Markets Authority (ESMA)"
+      - "European Insurance and Occupational Pensions Authority (EIOPA)"
+      - "European Data Protection Board (EDPB)"
+    compliance_features:
+      - "GDPR data protection compliance"
+      - "PSD2 payment services compliance"
+      - "MiCA crypto-asset regulations"
+      - "Solvency II capital requirements"
+      - "Consumer protection laws"
+      - "Automated claims processing"
+    data_protection:
+      data_controller: "Insurance Company"
+      data_processor: "Smart Contract Platform"
+      data_retention_period: "7 years"
+      data_subject_rights: true
+      data_breach_notification: true
+    time_limits:
+      gdpr_response_days: 30
+      claim_processing_days: 10
+      regulatory_reporting_days: 20
+      data_breach_notification_hours: 72 

@@ -1,0 +1,62 @@
+contract:
+  type: escrow
+  jurisdiction: india
+  parties:
+    - name: "Buyer"
+      role: "payer"
+      address: "0x1234567890123456789012345678901234567890"
+      verification_required: true
+    - name: "Seller"
+      role: "payee"
+      address: "0x0987654321098765432109876543210987654321"
+      verification_required: true
+  
+  conditions:
+    - trigger: "delivery_confirmed"
+      action: "release_funds"
+      time_limit: 7
+      parameters:
+        confirmation_method: "digital_signature"
+        delivery_proof_required: true
+    
+    - trigger: "dispute_raised"
+      action: "freeze_funds"
+      time_limit: 30
+      parameters:
+        dispute_resolution_authority: "rbi"
+        cooling_off_period: 7
+    
+    - trigger: "deadline_expired"
+      action: "return_funds_to_payer"
+      time_limit: 30
+      parameters:
+        automatic_return: true
+  
+  legal_requirements:
+    - "kyc_verification"
+    - "pan_card_verification"
+    - "aadhaar_verification"
+    - "gst_compliance"
+    - "dispute_resolution_mechanism"
+    - "rbi_guidelines_compliance"
+  
+  metadata:
+    description: "India-compliant escrow contract for secure payment holding"
+    version: "1.0.0"
+    author: "Smart Contract Generator"
+    regulatory_bodies:
+      - "Reserve Bank of India (RBI)"
+      - "Securities and Exchange Board of India (SEBI)"
+    compliance_features:
+      - "KYC verification for all parties"
+      - "GST compliance tracking"
+      - "RBI transaction limits"
+      - "Automated dispute resolution"
+      - "Regulatory reporting"
+    transaction_limits:
+      max_amount: "1000000 INR"
+      min_amount: "1000 INR"
+    time_limits:
+      kyc_verification_days: 7
+      dispute_resolution_days: 30
+      regulatory_reporting_days: 15 

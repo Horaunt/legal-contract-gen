@@ -1,0 +1,50 @@
+{
+  "name": "jurisdiction-smart-contract-generator",
+  "version": "1.0.0",
+  "description": "Generate jurisdiction-specific smart contracts with legal compliance",
+  "main": "cli/main.py",
+  "scripts": {
+    "test": "pytest tests/",
+    "generate": "python cli/main.py generate",
+    "validate": "python cli/main.py validate",
+    "deploy": "python cli/main.py deploy",
+    "format": "black .",
+    "lint": "flake8 .",
+    "type-check": "mypy .",
+    "install-deps": "pip install -r requirements.txt && npm install"
+  },
+  "keywords": [
+    "smart-contracts",
+    "ethereum",
+    "legal-compliance",
+    "jurisdiction",
+    "blockchain",
+    "solidity"
+  ],
+  "author": "Smart Contract Generator Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "hardhat": "^2.19.0",
+    "hardhat-deploy": "^0.12.0",
+    "hardhat-etherscan": "^3.1.7",
+    "ganache-cli": "^7.0.0"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0",
+    "web3": "^4.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/jurisdiction-smart-contract-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/jurisdiction-smart-contract-generator/issues"
+  },
+  "homepage": "https://github.com/your-org/jurisdiction-smart-contract-generator#readme"
+} 

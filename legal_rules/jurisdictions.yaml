@@ -1,0 +1,156 @@
+jurisdictions:
+  india:
+    name: "India"
+    regulatory_bodies:
+      - "Reserve Bank of India (RBI)"
+      - "Securities and Exchange Board of India (SEBI)"
+      - "Insurance Regulatory and Development Authority (IRDAI)"
+    
+    contract_types:
+      escrow:
+        legal_requirements:
+          - "kyc_verification"
+          - "pan_card_verification"
+          - "aadhaar_verification"
+          - "gst_compliance"
+          - "dispute_resolution_mechanism"
+          - "rbi_guidelines_compliance"
+        mandatory_clauses:
+          - "kyc_verification_clause"
+          - "gst_tax_clause"
+          - "dispute_resolution_clause"
+          - "regulatory_reporting_clause"
+        time_limits:
+          dispute_resolution_days: 30
+          kyc_verification_days: 7
+          regulatory_reporting_days: 15
+      
+      insurance:
+        legal_requirements:
+          - "irdai_compliance"
+          - "policy_holder_verification"
+          - "claim_verification_process"
+          - "regulatory_reporting"
+        mandatory_clauses:
+          - "irdai_compliance_clause"
+          - "claim_verification_clause"
+          - "policy_holder_rights_clause"
+        time_limits:
+          claim_processing_days: 15
+          regulatory_reporting_days: 30
+      
+      settlement:
+        legal_requirements:
+          - "court_approval_requirement"
+          - "dispute_resolution_mechanism"
+          - "regulatory_compliance"
+        mandatory_clauses:
+          - "court_approval_clause"
+          - "dispute_resolution_clause"
+          - "regulatory_compliance_clause"
+        time_limits:
+          settlement_approval_days: 45
+          dispute_resolution_days: 60
+
+  eu:
+    name: "European Union"
+    regulatory_bodies:
+      - "European Securities and Markets Authority (ESMA)"
+      - "European Banking Authority (EBA)"
+      - "European Insurance and Occupational Pensions Authority (EIOPA)"
+    
+    contract_types:
+      escrow:
+        legal_requirements:
+          - "gdpr_compliance"
+          - "psd2_compliance"
+          - "aml_kyc_requirements"
+          - "consumer_protection_laws"
+          - "mica_compliance"
+        mandatory_clauses:
+          - "gdpr_data_protection_clause"
+          - "psd2_payment_clause"
+          - "consumer_rights_clause"
+          - "mica_regulatory_clause"
+        time_limits:
+          dispute_resolution_days: 14
+          gdpr_response_days: 30
+          regulatory_reporting_days: 10
+      
+      insurance:
+        legal_requirements:
+          - "solvency_ii_compliance"
+          - "gdpr_compliance"
+          - "consumer_protection"
+          - "eiopa_guidelines"
+        mandatory_clauses:
+          - "solvency_ii_clause"
+          - "gdpr_compliance_clause"
+          - "consumer_protection_clause"
+        time_limits:
+          claim_processing_days: 10
+          regulatory_reporting_days: 20
+      
+      settlement:
+        legal_requirements:
+          - "brussels_i_regulation"
+          - "rome_i_regulation"
+          - "consumer_protection"
+        mandatory_clauses:
+          - "jurisdiction_clause"
+          - "applicable_law_clause"
+          - "consumer_protection_clause"
+        time_limits:
+          settlement_approval_days: 30
+          dispute_resolution_days: 45
+
+  us:
+    name: "United States"
+    regulatory_bodies:
+      - "Securities and Exchange Commission (SEC)"
+      - "Commodity Futures Trading Commission (CFTC)"
+      - "Financial Industry Regulatory Authority (FINRA)"
+    
+    contract_types:
+      escrow:
+        legal_requirements:
+          - "sec_registration"
+          - "aml_kyc_requirements"
+          - "state_specific_laws"
+          - "ucc_compliance"
+          - "consumer_protection"
+        mandatory_clauses:
+          - "sec_compliance_clause"
+          - "aml_kyc_clause"
+          - "state_law_clause"
+          - "ucc_compliance_clause"
+        time_limits:
+          dispute_resolution_days: 30
+          regulatory_reporting_days: 15
+          sec_filing_days: 10
+      
+      insurance:
+        legal_requirements:
+          - "state_insurance_regulation"
+          - "naic_compliance"
+          - "consumer_protection_laws"
+        mandatory_clauses:
+          - "state_insurance_clause"
+          - "naic_compliance_clause"
+          - "consumer_protection_clause"
+        time_limits:
+          claim_processing_days: 20
+          regulatory_reporting_days: 30
+      
+      settlement:
+        legal_requirements:
+          - "federal_court_rules"
+          - "state_court_rules"
+          - "class_action_rules"
+        mandatory_clauses:
+          - "federal_jurisdiction_clause"
+          - "state_law_clause"
+          - "class_action_clause"
+        time_limits:
+          settlement_approval_days: 60
+          court_approval_days: 90 
