@@ -14,7 +14,7 @@ This guide will help you set up and use the jurisdiction-specific smart contract
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Horaunt/legal-contract-gen
 cd jurisdiction-smart-contract-generator
 ```
 
